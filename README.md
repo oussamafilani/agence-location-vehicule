@@ -2,7 +2,7 @@
 ## Contexte du projet
 Vous êtes amené à créer un siteweb pour une agence de location de tout type de véhicules.
 
-### Le siteweb doit contenir les pages suivantes :
+#### Le siteweb doit contenir les pages suivantes :
 
 * Accueil (bien représentative pour le siteweb)
 * Gallerie (regroupe l'ensemble des produits de l'agence)
@@ -10,7 +10,7 @@ Vous êtes amené à créer un siteweb pour une agence de location de tout type 
 * Contact (contient un formulaire qui prend [nom, email, sujet, message] et affiche un message avec les détails renseignés)
 ​
 
-### Critères du formulaire de réservation :
+#### Critères du formulaire de réservation :
 
 * type du véhicule : moto, compact, citadin, utilitaire, sedan/berlin, camion, engin de chantier.
 
