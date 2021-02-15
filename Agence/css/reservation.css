@@ -1,0 +1,63 @@
+/* header */
+
+.header {
+  padding: 15px 0px;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  background-color: #111;
+}
+
+.main-menu {
+  text-align: center;
+}
+.main-menu ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.main-menu ul > li {
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+}
+.main-menu ul > li a {
+  padding: 15px 18px;
+  line-height: 20px;
+  font-size: 16px;
+  display: block;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* end header */
+
+/* reservation */
+.veh-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(224, 224, 224);
+}
+.veh-types select {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 20px 5px 20px;
+}
+.veh-types input {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: auto;
+}
+.veh-types input[type="submit"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 15px;
+}
+/* end reservation */

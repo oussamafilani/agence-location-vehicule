@@ -1,10 +1,10 @@
+/* header */
+
 .header {
   padding: 15px 0px;
   position: absolute;
   z-index: 999;
   width: 100%;
-  left: 0;
-  top: 0;
   background-color: #111;
 }
 
@@ -31,3 +31,5 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+/* end header */

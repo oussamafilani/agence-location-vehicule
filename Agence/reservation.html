@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Reservation</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/reservation.css" />
   </head>
   <body>
     <!-- header -->
@@ -20,8 +25,53 @@
     </header>
     <!-- end header -->
 
+    <!-- reservation -->
+    <section>
+      <div class="veh-types">
+        <form action="">
+          <label for="">type du véhicule</label>
+          <select name="" id="vehicule" onchange="_vehicule()">
+            <option value="choix">--select one--</option>
+            <option value="moto">Moto</option>
+            <option value="compact">Compact</option>
+            <option value="citadin">Citadin</option>
+            <option value="utilitaire">Utilitaire</option>
+            <option value="engin_de_chantier">engin de chantier</option>
+            <option value="berlin">Berlin</option>
+            <option value="camion">Camion</option>
+          </select>
+
+          <label for="">boite à vitesse</label>
+          <select name="" id="boite">
+            <option value="">--select one--</option>
+          </select>
+
+          <label for="">type du carburant</label>
+          <select name="" id="carburant" onchange="_carburant()">
+            <option value="">--select one--</option>
+          </select>
+
+          <label for="">Date de départ</label>
+          <input type="date" id="start" name="" value="" />
+
+          <label for="">Date de retour</label>
+          <input type="date" id="end" name="" value="" />
+
+          <input
+            type="submit"
+            id="valider"
+            value="submit"
+            onclick="cacul_prix()"
+          />
+        </form>
+      </div>
+    </section>
+    <!--end reservation -->
     <!-- footer -->
     <footer></footer>
     <!-- end Footer  -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/reservation.js"></script>
   </body>
 </html>
