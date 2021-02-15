@@ -7,6 +7,7 @@ var prix_tarif;
 var prix_global;
 
 
+// change a selections options based on another select option selected
 function _vehicule(){
     var veh_type = document.getElementById("vehicule").value;
     switch(veh_type) {
@@ -98,7 +99,7 @@ function cacul_prix(){
     prix_global = diffDays*(prix_tarif + (prix_tarif*(prc_boite + prc_carburant)));
 
      //To display the final no. of days (result)
-    alert("Total number of days between dates = "+ diffDays); 
-    alert("prix global = "+ prix_global); 
+    confirm("Total number of days between dates = "+ diffDays); 
+    confirm("prix global = "+ prix_global); 
 
 }
