@@ -1,6 +1,6 @@
-var vehicule =  ["moto","compact","citadin","utilitaire","engin_de_chantier","berlin","camion"];
-var carburant =  ["essence","diesel","electrique","hybride"];
-var boite = ["manuelle","automatique"]
+// var vehicule =  ["moto","compact","citadin","utilitaire","engin_de_chantier","berlin","camion"];
+// var carburant =  ["essence","diesel","electrique","hybride"];
+// var boite = ["manuelle","automatique"]
 var prc_carburant;
 var prc_boite;
 var prix_tarif;
@@ -103,3 +103,22 @@ function cacul_prix(){
     confirm("prix global = "+ prix_global); 
 
 }
+
+
+// print pdf
+var doc = new jsPDF();          
+var elementHandler = {
+  '#ignorePDF': function (element, renderer) {
+    return true;
+  }
+};
+var source = window.document.getElementsByTagName("body")[0];
+doc.fromHTML(
+    source,
+    15,
+    15,
+    {
+      'width': 180,'elementHandlers': elementHandler
+    });
+
+doc.output("dataurlnewwindow");
