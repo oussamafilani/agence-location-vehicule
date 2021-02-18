@@ -10,6 +10,8 @@
     <meta name="author" content="" />
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- header -->
@@ -30,7 +32,9 @@
       </nav>
     </header>
     <!-- end header -->
-    <section>
+
+    <!-- presentation  -->
+    <!-- <section>
       <div class="video-slide">
         <video
           src="videos/TimeLapseRoadtrip.mp4"
@@ -39,6 +43,51 @@
           playsinline
           muted
         ></video>
+      </div>
+    </section> -->
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/cars/car.jpg" alt="car" width="100%" height="100%" />
+          <div class="centered">Centered</div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/cars/moto.jpg"
+            alt="car"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <!-- <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div> -->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <section class="slidedesc">
+      <div class="img1">
+        <img src="images/cars/carslide.jpg" alt="" />
+      </div>
+      <div class="img2">
+        <h2 class="q-display1">UPGRADE TO A BREATH OF FRESH THINKING<br /></h2>
+        <h2 class="q-display2">MEET THE ALL-NEW BUICK ENVISION</h2>
+        <img src="images/cars/carslide2.jpg" alt="" />
+        <p>
+          Introducing the All-New Envision, including the First-Ever Envision
+          Avenir and Envision with available Sport Touring Package. Each offers
+          available technologies to help keep you connected to the road and
+          driver-focused design to help keep you connected to the moment.
+          Discover for yourself how the 2021 Envision is all-new and all about
+          you.
+        </p>
+        <button>EXPLORE ENVISION</button>
       </div>
     </section>
     <!-- footer -->
@@ -79,5 +128,9 @@
       </div>
     </footer>
     <!-- end Footer  -->
+    <!-- swiper js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- javascript -->
+    <script src="js/index.js"></script>
   </body>
 </html>

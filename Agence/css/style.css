@@ -3,19 +3,22 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-image: url("../images/background.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+}
 
 /* header */
-
 
 .nav {
   background-color: #fff;
   text-align: right;
   height: 70px;
-  border-bottom: solid 1px #EAEAEB;
+  border-bottom: solid 1px #eaeaeb;
 }
 
-
-.menu{
+.menu {
   margin: 0 30px 0 0;
   font-family: Raleway;
 }
@@ -25,7 +28,7 @@
   text-decoration: none;
   font-weight: 500;
   color: #1c3664;
-  margin:0 10px;
+  margin: 0 10px;
   line-height: 70px;
 }
 
@@ -37,46 +40,44 @@
   height: 50px;
 }
 
-.nav label{
+.nav label {
   margin: 0 40px 0 0;
   font-size: 26px;
   line-height: 70px;
   display: none;
   width: 26px;
   float: right;
-} 
+}
 
-#toggle{
+#toggle {
   display: none;
 }
 @media screen and (max-width: 700px) {
-  .nav label{
+  .nav label {
     display: block;
     cursor: pointer;
   }
-  .menu{
+  .menu {
     text-align: center;
     width: 100%;
     display: none;
-  } 
+  }
 
   .menu a {
     display: block;
-    border: solid 1px #EAEAEB;
+    border: solid 1px #eaeaeb;
     text-align: center;
     background-color: #fff;
   }
-  #toggle:checked + .menu{
+  #toggle:checked + .menu {
     display: block;
   }
 }
-
-
 
 /* end header */
 
 /* presentation */
-.video-slide {
+/* .video-slide {
   height: 700px;
 }
 
@@ -88,9 +89,115 @@
   top: 0;
   left: 0;
   z-index: -1;
-}
+} */
 
 /* end presentation */
+
+/* swiper */
+
+.swiper-container {
+  /* width: 100%; */
+  /* height: 100%; */
+  width: 80%;
+  height: 50%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+}
+
+.swiper-slide .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: red;
+  transform: translate(-50%, -50%);
+}
+
+/* start slidedesc */
+.slidedesc {
+  margin-top: 10px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content:space-between; */
+  align-items: center;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+
+.slidedesc .img1 {
+  box-sizing: border-box;
+  /* margin: 3%; */
+  margin-left: 2%;
+  flex: 60%;
+}
+
+.slidedesc .img2 {
+  box-sizing: border-box;
+  margin-right: 2%;
+  flex: 40%;
+}
+
+.slidedesc .img2 p {
+  color: #cec0c0;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: inherit;
+  line-height: inherit;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.slidedesc .q-display1 {
+  color: rgb(243, 232, 232);
+
+  letter-spacing: 5px;
+  font-size: 1.167rem;
+  line-height: 1.667rem;
+  margin-bottom: 0.208rem;
+  padding-top: 0rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin: 0;
+  padding: 0;
+}
+.slidedesc .q-display2 {
+  color: rgb(243, 232, 232);
+  font-size: 3.429rem;
+  line-height: 3.857rem;
+  margin-bottom: 0.518rem;
+  padding-top: 0rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin: 0;
+  padding: 0;
+}
+.img2 button {
+  padding: 9px 25px 9px 25px;
+  border: 1px solid #2b2b2b;
+  background-color: #fff;
+  color: #2b2b2b;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+.img2 button:hover {
+  padding: 9px 25px 9px 25px;
+  border: 1px solid #2b2b2b;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+/* end slidedesc */
 
 /* footer */
 
