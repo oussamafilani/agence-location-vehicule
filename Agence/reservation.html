@@ -22,7 +22,6 @@
         <input type="checkbox" id="toggle" />
         <div class="menu">
           <a href="index.html">Accueil</a>
-          <a href="#">About</a>
           <a href="reservation.html">Reservation</a>
           <a href="gallerie.html">Nos Produits</a>
           <a href="contact.html">Contact Us</a>
@@ -33,8 +32,9 @@
 
     <!-- reservation -->
     <section>
+      <h2>Reservation</h2>
       <div class="veh-types">
-        <form action="">
+        <div>
           <label for="">type du véhicule</label>
           <select name="" id="vehicule" onchange="_vehicule()">
             <option value="choix">--select one--</option>
@@ -63,13 +63,16 @@
           <label for="">Date de retour</label>
           <input type="date" id="end" name="" value="" />
 
-          <input
-            type="submit"
-            id="valider"
-            value="submit"
-            onclick="cacul_prix()"
-          />
-        </form>
+          <!-- Trigger/Open The Modal -->
+          <button class="show btn" onclick="cacul_prix()">valider</button>
+        </div>
+
+        <div class="modal">
+          <div class="modal-box">
+            <span class="close-button">X</span>
+            <div id="res_modal"></div>
+          </div>
+        </div>
       </div>
     </section>
     <!--end reservation -->

@@ -23,7 +23,6 @@
         <input type="checkbox" id="toggle" />
         <div class="menu">
           <a href="index.html">Accueil</a>
-          <a href="#">About</a>
           <a href="reservation.html">Reservation</a>
           <a href="gallerie.html">Nos Produits</a>
           <a href="contact.html">Contact Us</a>
@@ -35,7 +34,7 @@
     <!-- start contact -->
     <section>
       <h2>Contact us</h2>
-      <div class="contact-contact">
+      <div class="contact-container">
         <form action="">
           <label for="fname">Full Name</label>
           <input
@@ -43,6 +42,7 @@
             id="fname"
             name="fullname"
             placeholder="Full name.."
+            required
           />
 
           <label for="eemail">Your Email</label>
@@ -51,6 +51,7 @@
             id="eemail"
             name="youremail"
             placeholder="Your email.."
+            required
           />
 
           <label for="ssujet">Sujet</label>
@@ -59,6 +60,7 @@
             id="ssujet"
             name="yoursujet"
             placeholder="sujet.."
+            required
           />
 
           <label for="message">Message</label>
@@ -69,7 +71,12 @@
             style="height: 200px"
           ></textarea>
         </form>
-        <button class="show btn" onclick="get_contact()">Envoyer</button>
+        <input
+          type="submit"
+          class="show btn"
+          onclick="get_contact()"
+          value="Envoyer"
+        />
         <div class="modal">
           <div class="modal-box">
             <span class="close-button">X</span>

@@ -98,11 +98,28 @@ function cacul_prix(){
  
     prix_global = diffDays*(prix_tarif + (prix_tarif*(prc_boite + prc_carburant)));
 
-     //To display the final no. of days (result)
-    confirm("Total number of days between dates = "+ diffDays); 
-    confirm("prix global = "+ prix_global); 
-
+     //To display the final Price (result)
+     document.getElementById("res_modal").innerHTML = "<p style='margin-top:10px;text-align:center'>Prix Global : "+prix_global+"<br></p>"+"<p style='color:green;text-align:center;margin-top:10px;font-size:25px' >successfully submitted</p>";
 }
+
+
+let modal = document.querySelector(".modal");
+let show = document.querySelector(".show");
+let closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+
+show.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
 
 
 // print pdf

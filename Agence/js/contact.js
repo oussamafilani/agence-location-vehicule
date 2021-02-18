@@ -6,7 +6,8 @@ function get_contact(){
     var mysujet = document.getElementById("ssujet").value;
     var mymessage = document.getElementById("message").value;
 
-    document.getElementById("ModalContact").innerHTML = "<p>Name : "+ myname+ "</p>"+"<p>Email: "+myemail+"</p>"+"<p>Sujet : "+ mysujet + "</p>"+"<p>Message: "+mymessage+"<br></p>"+"<p>votre message a ete beine envoie</p>";
+    document.getElementById("ModalContact").innerHTML = "<p style='margin-top:10px'>Name : "+ myname+ "</p>"+"<p style='margin-top:10px'>Email: "+myemail+"</p>"+"<p style='margin-top:10px'>Sujet : "+ mysujet + "</p>"+"<p style='margin-top:10px'>Message : "+mymessage+"<br></p>"+"<p style='color:green;text-align:center;margin-top:10px;font-size:25px' >Merci, votre message a été envoyé avec succès</p>";
+    
 
 
     //  To display name
