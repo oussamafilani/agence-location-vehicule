@@ -92,10 +92,9 @@ body {
   padding: 20px;
   margin: auto;
   width: 44%;
-  text
 }
 
-input[type=text],input[type=email], textarea {
+input[type="text"],input[type="email"], textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -106,9 +105,7 @@ input[type=text],input[type=email], textarea {
   resize: vertical;
 }
 
-/* label{
- 
-} */
+
 
 
 h2{
