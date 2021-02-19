@@ -99,7 +99,7 @@ body {
 
 .swiper-slide .centered {
   position: absolute;
-  top: 10%;
+  top: 9%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(243, 232, 232);
@@ -122,6 +122,9 @@ body {
     width: 100%;
   }
   
+  .swiper-slide .centered {
+    top: 15%;
+  }
 
 }
 /* start slidedesc */

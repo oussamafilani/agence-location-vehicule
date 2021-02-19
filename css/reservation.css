@@ -88,7 +88,7 @@ h2{
   letter-spacing: 5px;
   font-size: 1.567rem;
   line-height: 2.167rem;
-  margin:  2.4rem 0 2.4rem 0;
+  margin:  2.4rem 0 1rem 0;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 4px;
@@ -97,7 +97,7 @@ h2{
 p{
   color: #f1e8e8;
   text-align: center;
-  margin:  2.4rem 0 2.4rem 0;
+  margin:  1rem 0 2.4rem 0;
   font-family: Futura, Helvetica, Arial, sans-serif;
   font-size: inherit;
   line-height: 1.6;
@@ -109,9 +109,6 @@ p{
 
 
 .veh-types {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 2px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -202,6 +199,10 @@ p{
   opacity: 1;
   visibility: visible;
   transform: scale(1);
+}
+
+.modal-style p {
+  color: #000;
 }
 
 @media screen and (max-width: 700px) {
