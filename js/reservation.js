@@ -98,10 +98,6 @@ function _vehicule(){
             prix_tarif=250;
             prc_boite=0.19;
             break;
-        // case "choix":
-        //     document.querySelector('.btn-disabled').classList.add('btn-disabled');
-        //     document.querySelector('.btn-disabled').disabled = true;
-        //     break;
         default:
     }
 }
