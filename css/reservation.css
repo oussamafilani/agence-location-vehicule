@@ -84,10 +84,25 @@ body {
 
 h2{
   text-align: center;
-  margin: 1.5%;
-  color: #eaeaeb;
+  color: rgb(243, 232, 232);
+  letter-spacing: 5px;
+  font-size: 1.567rem;
+  line-height: 2.167rem;
+  margin:  2.4rem 0 2.4rem 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px;
 }
 
+p{
+  color: #f1e8e8;
+  text-align: center;
+  margin:  2.4rem 0 2.4rem 0;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: inherit;
+  line-height: 1.6;
+ padding: 0 30% 0 30%;
+}
 /* end header */
 
 /* reservation */
@@ -131,8 +146,8 @@ h2{
   .veh-types {
    width: 80%;
   }
-  h2{
-    margin: 25px 0 25px 0 ;
+  p{
+   padding: 0 15% 0 15%;
   }
 }
 
@@ -214,7 +229,7 @@ h2{
 
 .footer-con h3 {
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: bold;
   font-size: 20px;
 }
@@ -239,7 +254,7 @@ h2{
 
 .footer-col {
   flex: 25%;
-  margin: 0%;
+  margin: 19px 0 19px 0 ;
   width: auto;
   text-align: center;
 }

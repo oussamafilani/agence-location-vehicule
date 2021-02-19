@@ -112,18 +112,30 @@ input[type=text],input[type=email], textarea {
 
 h2{
   text-align: center;
-  margin: 1.5%;
-  color: #f2f2f2;
+  color: rgb(243, 232, 232);
+  letter-spacing: 5px;
+  font-size: 1.567rem;
+  line-height: 2.167rem;
+  margin:  2.4rem 0 2.4rem 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+p{
+  color: #f1e8e8;
+  text-align: center;
+  margin:  2.4rem 0 2.4rem 0;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: inherit;
+  line-height: 1.6;
+ padding: 0 20% 0 20%;
 }
 
 @media screen and (max-width: 700px) {
   .contact-container {
     margin: 0% 5% 0% 5%;
     /* width: 80%; */
-  }
-  
-  h2{
-    margin: 25px 0 25px 0 ;
   }
 }
 
@@ -234,7 +246,7 @@ h2{
 
 .footer-col {
   flex: 25%;
-  margin: 0%;
+  margin: 19px 0 19px 0 ;
   width: auto;
   text-align: center;
 }

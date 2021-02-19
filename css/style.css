@@ -218,7 +218,7 @@ body {
   color: #f1e8e8;
   font-family: Futura, Helvetica, Arial, sans-serif;
   font-size: inherit;
-  line-height: 1.4;
+  line-height: 1.6;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -310,7 +310,7 @@ body {
 
 .footer-col {
   flex: 25%;
-  margin: 0%;
+  margin: 19px 0 19px 0 ;
   width: auto;
   text-align: center;
 }
