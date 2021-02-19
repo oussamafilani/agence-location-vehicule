@@ -1,3 +1,10 @@
+
+ window.onload = () => {
+  document.querySelector('.btn-disabled').classList.add('btn-disabled');
+  document.querySelector('.btn-disabled').disabled = false;
+ 
+}
+
 function get_contact(){
 
     // To set name
@@ -11,8 +18,24 @@ function get_contact(){
 
 
     //  To display name
-
 }
+
+
+
+function check_message()
+{
+  if(document.document.getElementById("message").value != "")
+  {
+  document.querySelector('.btn-disabled').disabled = false;
+  }
+}
+
+// document.getElementById("message").addEventListener("input", check_message());
+
+
+
+
+
 
 let modal = document.querySelector(".modal");
 let show = document.querySelector(".show");

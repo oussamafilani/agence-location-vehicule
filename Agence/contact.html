@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallerie</title>
     <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="description" content="Recherchez les prix pour Europcar, Firefly, Payless, Sixt, Sunnycars et Thrifty. Économisez 30% ou plus. Offres de voitures de location et réductions" />
     <meta name="author" content="" />
     <!-- style css -->
     <link rel="stylesheet" href="css/contact.css" />
@@ -65,15 +65,17 @@
 
           <label for="message">Message</label>
           <textarea
+            value="hi"
             id="message"
             name="message"
             placeholder="Write something.."
             style="height: 200px"
+            oninput="check_message()"
           ></textarea>
         </form>
         <input
           type="submit"
-          class="show btn"
+          class="show btn btn-disabled"
           onclick="get_contact()"
           value="Envoyer"
         />
@@ -137,6 +139,7 @@
     </footer>
     <!-- end Footer  -->
     <!-- Javascript -->
+
     <script src="js/contact.js"></script>
   </body>
 </html>

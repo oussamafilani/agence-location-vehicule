@@ -129,7 +129,7 @@ function _carburant(){
 
 function CheckDate()
 {
-    if(document.getElementById("end").value != "cc")
+    if(document.getElementById("end").value != "END")
     {
         document.querySelector('button').disabled = false;
     }

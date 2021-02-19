@@ -120,6 +120,14 @@ h2{
   resize: vertical;
 }
 
+
+@media screen and (max-width: 700px) {
+
+  .veh-types {
+   width: 80%;
+  }
+}
+
 /* end reservation */
 
 /* start modal */
@@ -233,7 +241,8 @@ h2{
 /* end footer */
 
 .btn-disabled:disabled  {
-  background: grey;
+  background: #dddddd;
   cursor: not-allowed;
+  color: #000000;
 
 }

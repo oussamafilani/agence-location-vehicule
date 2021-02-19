@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservation</title>
     <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Recherchez les prix pour Europcar, Firefly, Payless, Sixt, Sunnycars et Thrifty. Économisez 30% ou plus. Offres de voitures de location et réductions"
+    />
     <meta name="author" content="" />
     <!-- style css -->
     <link rel="stylesheet" href="css/reservation.css" />
@@ -58,10 +61,25 @@
           </select>
 
           <label for="">Date de départ</label>
-          <input type="date" id="start" name="" value="" />
+          <input
+            type="date"
+            id="start"
+            name=""
+            value=""
+            min="2021-02-19"
+            max="2022-12-31"
+          />
 
           <label for="">Date de retour</label>
-          <input onchange="CheckDate()" type="date" id="end" name="" value="cc" />
+          <input
+            onchange="CheckDate()"
+            type="date"
+            id="end"
+            name=""
+            value="END"
+            min="2021-02-20"
+            max="2022-12-31"
+          />
 
           <!-- Trigger/Open The Modal -->
           <button class="show btn btn-disabled" onclick="cacul_prix()">
