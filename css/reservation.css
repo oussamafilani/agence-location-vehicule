@@ -131,18 +131,25 @@ h2{
   .veh-types {
    width: 80%;
   }
+  h2{
+    margin: 25px 0 25px 0 ;
+  }
 }
 
 /* end reservation */
 
 /* start modal */
 .btn {
-  background-color: #000000;
+  background-color: rgba(255, 0, 0, 0.699);;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
+}
+.btn :hover{
+  background-color: red;
 
 }
 
