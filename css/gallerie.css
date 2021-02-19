@@ -5,14 +5,14 @@
   padding: 0;
 }
 body {
-  background-image: url("../images/background.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #000;
 }
 
 
 /* header */
+#active{
+  color: red;
+}
 
 .nav {
   background-color: #f2f2f2;
@@ -26,6 +26,11 @@ body {
   margin: 0 30px 0 0;
   font-family: Raleway;
 }
+
+.menu :hover{
+  color: red;
+}
+
 
 .menu a {
   clear: right;
@@ -287,7 +292,7 @@ body {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 400px) {
   .footer-col {
     flex: 100%;
     margin-top: 15px;

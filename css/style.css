@@ -4,14 +4,17 @@
   padding: 0;
 }
 body {
-  background-image: url("../images/background.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url("../images/background.jpg");
+  background-attachment: fixed; */
+  background-color: #000;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
 }
 
 /* header */
-
+#active{
+  color: red;
+}
 .nav {
   background-color: #f2f2f2;
   text-align: right;
@@ -24,6 +27,9 @@ body {
 .menu {
   margin: 0 30px 0 0;
   font-family: Raleway;
+}
+.menu :hover{
+  color: red;
 }
 
 .menu a {
@@ -199,10 +205,11 @@ body {
   margin: auto;
   padding: 12px 25px 12px 25px;
   border: 1px solid #2b2b2b;
-  background-color: #fff;
-  color: #2b2b2b;
+  background-color: rgba(255, 0, 0, 0.699);
+  color: #ffffff;
   font-family: Futura, Helvetica, Arial, sans-serif;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -217,8 +224,7 @@ body {
 }
 
 .divimg2 button:hover {
-  border: 1px solid #2b2b2b;
-  background-color: rgb(129, 129, 129);
+  background-color: rgb(255, 0, 0);
   color: #ffffff;
   font-family: Futura, Helvetica, Arial, sans-serif;
 }
@@ -322,7 +328,7 @@ body {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 400px) {
   .footer-col {
     flex: 100%;
     margin-top: 15px;
