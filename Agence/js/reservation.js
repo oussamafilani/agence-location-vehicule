@@ -7,6 +7,50 @@ var prix_tarif;
 var prix_global;
 
 
+ window.onload = () => {
+    document.querySelector('.btn-disabled').classList.add('btn-disabled');
+    document.querySelector('.btn-disabled').disabled = true;
+ }
+ 
+// const checkInput = () => {
+//     var veh_val = document.getElementById("vehicule").value;
+//     if(veh_val == "")
+//     {
+//         document.querySelector('.btn-disabled').classList.add('btn-disabled');
+//         document.querySelector('.btn-disabled').disabled = true;
+//     }else
+//     {
+        
+//         document.querySelector('button').disabled = false;
+//         document.querySelector('button').classList.remove('btn-disabled');
+//         document.querySelector('.btn-disabled').style.cursor='pointer';
+//         document.querySelector('.btn-disabled').style.background='black';
+
+//     }
+
+// }
+
+// }
+/* const checkInput = () => {
+    var veh_val = document.getElementById("vehicule").value;
+
+    // const selects = document.querySelectorAll('select')
+
+    // selects.forEach(select => {})
+        if (veh_val == "") {
+            return
+        } else {
+            document.querySelector('button').disabled = false;
+            document.querySelector('button').classList.remove('btn-disabled');
+            document.querySelector('.btn-disabled').style.cursor='pointer';
+            document.querySelector('.btn-disabled').style.background='black';
+
+        }
+}
+ */
+
+
+
 // change a selections options based on another select option selected
 function _vehicule(){
     var veh_type = document.getElementById("vehicule").value;
@@ -54,6 +98,10 @@ function _vehicule(){
             prix_tarif=250;
             prc_boite=0.19;
             break;
+        // case "choix":
+        //     document.querySelector('.btn-disabled').classList.add('btn-disabled');
+        //     document.querySelector('.btn-disabled').disabled = true;
+        //     break;
         default:
     }
 }
@@ -79,6 +127,14 @@ function _carburant(){
 }
 
 
+function CheckDate()
+{
+    if(document.getElementById("end").value != "cc")
+    {
+        document.querySelector('button').disabled = false;
+    }
+}
+
 
 
 function cacul_prix(){
@@ -86,6 +142,12 @@ function cacul_prix(){
     // To set two dates to two variables
     var startdate = new Date(document.getElementById("start").value);
     var enddate = new Date(document.getElementById("end").value);
+    var _StartDate = document.getElementById("start").value
+    var _EndtDate = document.getElementById("end").value
+    var type_veh = document.getElementById("vehicule").value;
+    var _boite = document.getElementById("boite").value;
+    var _carburant = document.getElementById("carburant").value;
+
     
     // hours*minutes*seconds*milliseconds
     const oneDay = 24 * 60 * 60 * 1000;
@@ -99,7 +161,7 @@ function cacul_prix(){
     prix_global = diffDays*(prix_tarif + (prix_tarif*(prc_boite + prc_carburant)));
 
      //To display the final Price (result)
-     document.getElementById("res_modal").innerHTML = "<p style='margin-top:10px;text-align:center'>Prix Global : "+prix_global+"<br></p>"+"<p style='color:green;text-align:center;margin-top:10px;font-size:25px' >successfully submitted</p>";
+     document.getElementById("res_modal").innerHTML = "<p style='margin:10px;text-align:center'>Type du véhicule : "+type_veh+"</p><hr>"+"<p style='margin:10px;text-align:center'>Boite de vitesse: "+_boite+"</p><hr>"+"<p style='margin:10px;text-align:center'>Date de début: "+_StartDate+"</p><hr>"+"<p style='margin:10px;text-align:center'>Date de fin: "+_EndtDate+"</p><hr>"+"<p style='margin:10px;text-align:center'>Type du carburant: "+_carburant+"</p><hr>"+"<p style='margin:10px;text-align:center'>Prix Total : "+prix_global+"</p><hr>"+"<p style='color:green;text-align:center;margin:10px;font-size:25px' >successfully submitted</p>";
 }
 
 
@@ -122,20 +184,20 @@ closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
 
-// print pdf
-var doc = new jsPDF();          
-var elementHandler = {
-  '#ignorePDF': function (element, renderer) {
-    return true;
-  }
-};
-var source = window.document.getElementsByTagName("body")[0];
-doc.fromHTML(
-    source,
-    15,
-    15,
-    {
-      'width': 180,'elementHandlers': elementHandler
-    });
+// // print pdf
+// // var doc = new jsPDF();          
+// var elementHandler = {
+//   '#ignorePDF': function (element, renderer) {
+//     return true;
+//   }
+// };
+// var source = window.document.getElementsByTagName("body")[0];
+// doc.fromHTML(
+//     source,
+//     15,
+//     15,
+//     {
+//       'width': 180,'elementHandlers': elementHandler
+//     });
 
-doc.output("dataurlnewwindow");
+// doc.output("dataurlnewwindow");

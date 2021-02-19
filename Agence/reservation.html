@@ -61,10 +61,12 @@
           <input type="date" id="start" name="" value="" />
 
           <label for="">Date de retour</label>
-          <input type="date" id="end" name="" value="" />
+          <input onchange="CheckDate()" type="date" id="end" name="" value="cc" />
 
           <!-- Trigger/Open The Modal -->
-          <button class="show btn" onclick="cacul_prix()">valider</button>
+          <button class="show btn btn-disabled" onclick="cacul_prix()">
+            valider
+          </button>
         </div>
 
         <div class="modal">

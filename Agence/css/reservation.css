@@ -232,3 +232,8 @@ h2{
 
 /* end footer */
 
+.btn-disabled:disabled  {
+  background: grey;
+  cursor: not-allowed;
+
+}
