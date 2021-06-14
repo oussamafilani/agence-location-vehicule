@@ -1,6 +1,4 @@
-# Breif-3-interactif-agence-location-vehicule
 ## Contexte du projet
-Vous êtes amené à créer un siteweb pour une agence de location de tout type de véhicules.
 
 #### Le siteweb doit contenir les pages suivantes :
 
@@ -22,16 +20,3 @@ Vous êtes amené à créer un siteweb pour une agence de location de tout type 
 
 Calculer et afficher l'estimation du prix selon les critères renseignés et selon la PJ envoyée
 
-## Modalités pédagogiques
-Travail Individuel
-
-Temporalité :
-
-6 jours
-
-## Critères de performance
-* Le siteweb doit respecter l'UX/UI
-* Le siteweb doit respecter le responsive design
-* Le siteweb doit respecter les normes du SEO
-## Livrables
-Lien du Repo Github contenant le siteweb et le lien vers le siteweb hébérgé sur une plateforme d'hébérgement statique tel que (Github Pages, Netlify...)
